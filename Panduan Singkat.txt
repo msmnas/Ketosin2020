@@ -1,0 +1,15 @@
+Overview
+- Folder Ketosin = Android Project (Front End)
+- ketosin_2016 = Web Project (Back End), dapat diubah spt ketosin_2017
+
+
+Panduan Instalasi
+- Fix kan database kandidat, dan peserta voting
+- Folder ketosin (back end) silahkan taruh di server, dan set bisa diakses melalui ip
+- Edit folder project android sesuaikan ip dan nama folder back end di script MyRequest.java menggunakan Android Studio
+- Build android project ke apk lalu instal di smartphone
+- Pastikan smartphone dapat mengakses ip melalui jaringan
+
+
+Merubah IP Server Pada Folder Ketosin (Ubah Menggunakan Android Studio)
+~\Ketosin\app\src\main\java\com\example\darmawan\ketosin\MyRequest.java
