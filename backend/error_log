@@ -1,0 +1,30 @@
+[09-Oct-2018 15:57:06 UTC] PHP Notice:  Undefined variable: r in /home/u3275939/public_html/pilketos2018/backend/chart.php on line 13
+[09-Oct-2018 15:57:10 UTC] PHP Notice:  Undefined offset: 0 in /home/u3275939/public_html/pilketos2018/backend/setting.php on line 5
+[09-Oct-2018 15:57:56 UTC] PHP Notice:  Undefined offset: 0 in /home/u3275939/public_html/pilketos2018/backend/setting.php on line 5
+[10-Oct-2018 14:35:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000] [1044] Access denied for user 'u3275939_ketosin'@'localhost' to database 'u3275939_ketosin2018'' in /home/u3275939/public_html/pilketos2018/sys/ORM.php:13
+Stack trace:
+#0 /home/u3275939/public_html/pilketos2018/sys/ORM.php(13): PDO->__construct('mysql:host=loca...', 'u3275939_ketosi...', '12345678', Array)
+#1 /home/u3275939/public_html/pilketos2018/sys/ORM.php(58): ORM->__construct()
+#2 /home/u3275939/public_html/pilketos2018/backend/index.php(14): include('/home/u3275939/...')
+#3 {main}
+  thrown in /home/u3275939/public_html/pilketos2018/sys/ORM.php on line 13
+[10-Oct-2018 16:13:00 UTC] PHP Notice:  Undefined variable: r in /home/u3275939/public_html/pilketos2018/backend/chart.php on line 13
+[10-Oct-2018 16:15:12 UTC] PHP Notice:  Undefined offset: 0 in /home/u3275939/public_html/pilketos2018/backend/setting.php on line 5
+[10-Oct-2018 16:15:24 UTC] PHP Notice:  Undefined offset: 0 in /home/u3275939/public_html/pilketos2018/backend/setting.php on line 5
+[10-Oct-2018 16:19:20 UTC] PHP Notice:  Undefined variable: r in /home/u3275939/public_html/pilketos2018/backend/chart.php on line 13
+[10-Oct-2018 16:19:38 UTC] PHP Notice:  Undefined offset: 0 in /home/u3275939/public_html/pilketos2018/backend/setting.php on line 5
+[10-Oct-2018 16:20:20 UTC] PHP Notice:  Undefined variable: r in /home/u3275939/public_html/pilketos2018/backend/chart.php on line 13
+[10-Oct-2018 16:21:33 UTC] PHP Notice:  Undefined variable: r in /home/u3275939/public_html/pilketos2018/backend/chart.php on line 13
+[12-Oct-2018 14:17:32 UTC] PHP Notice:  Undefined offset: 0 in /home/u3275939/public_html/pilketos2018/backend/setting.php on line 5
+[12-Oct-2018 14:19:42 UTC] PHP Notice:  Undefined offset: 0 in /home/u3275939/public_html/pilketos2018/backend/setting.php on line 5
+[13-Oct-2018 13:53:53 UTC] PHP Notice:  Undefined variable: r in /home/u3275939/public_html/pilketos2018/backend/chart.php on line 13
+[13-Oct-2018 13:53:54 UTC] PHP Notice:  Undefined offset: 0 in /home/u3275939/public_html/pilketos2018/backend/setting.php on line 5
+[13-Oct-2018 13:55:56 UTC] PHP Notice:  Undefined variable: r in /home/u3275939/public_html/pilketos2018/backend/chart.php on line 13
+[14-Oct-2018 05:27:17 UTC] PHP Notice:  Undefined variable: r in /home/u3275939/public_html/pilketos2018/backend/chart.php on line 13
+[14-Oct-2018 05:27:18 UTC] PHP Notice:  Undefined offset: 0 in /home/u3275939/public_html/pilketos2018/backend/setting.php on line 5
+[14-Oct-2018 08:15:23 UTC] PHP Notice:  Undefined variable: r in /home/u3275939/public_html/pilketos2018/backend/chart.php on line 13
+[14-Oct-2018 08:15:24 UTC] PHP Notice:  Undefined offset: 0 in /home/u3275939/public_html/pilketos2018/backend/setting.php on line 5
+[14-Oct-2018 09:32:00 UTC] PHP Notice:  Undefined variable: r in /home/u3275939/public_html/pilketos2018/backend/chart.php on line 13
+[14-Oct-2018 11:20:04 UTC] PHP Notice:  Undefined variable: r in /home/u3275939/public_html/pilketos2018/backend/chart.php on line 13
+[14-Oct-2018 11:20:06 UTC] PHP Notice:  Undefined offset: 0 in /home/u3275939/public_html/pilketos2018/backend/setting.php on line 5
+[15-Oct-2018 00:32:44 UTC] PHP Notice:  Undefined offset: 0 in /home/u3275939/public_html/pilketos2018/backend/setting.php on line 5
