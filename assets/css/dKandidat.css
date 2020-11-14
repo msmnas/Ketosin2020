@@ -1,0 +1,41 @@
+    * {
+		font-family: 'K2D', sans-serif;
+		outline : none !important;
+    }
+    /*============================*/
+    .dk-header {
+        background : url('../img/999.png');
+        background-position: center;
+        background-size : cover;
+        height: 20vh;
+    }
+    .dim-bg {
+        background-color: rgb(0,0,0,0.6); /* Fallback color */
+        height: 20vh;
+        width: 100%;
+    }
+    .text-position {
+        color : white;
+        position: absolute;
+        text-align: center;
+        top: 15%;
+        width: 100%;
+        font-size: 50px;
+    }
+    .second-part {
+        background : #e7e7e7;
+        padding : 20px;
+    }
+    .footer {
+        background : #363636;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    @media only screen and (max-width : 800px) {
+        .text-position {
+            top: 20%;
+            font-size: 30px;
+        }
+    }

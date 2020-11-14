@@ -1,0 +1,85 @@
+	/*============================*/
+	* {
+		font-family: 'K2D', sans-serif;
+		padding: 0;
+		margin : 0 auto;
+		outline : none !important;
+	}
+	/*============================*/
+	.m-t-20 {margin-top: 20px;}
+	/*============================*/
+	body {
+		background: url('../img/6.png');
+		background-size: cover;
+		background-position: center;
+	}
+	.box {
+		background: rgba(232, 232, 232, 0.2);
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		/*background: red;*/
+		border : 1px solid #e8e8e8;
+		width: 30%;
+		padding: 50px;
+		margin-top: 130px;
+	}
+	.logo-box img {
+		width: 100px;
+	}
+	.title-box {
+		font-size: 50px;
+		color : #737373;
+	}
+	.form-control {
+		background: none;
+		border: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-bottom: 2px solid lightgrey;
+		transition: .5s;
+		width: 90%;
+	}
+	.form-control:focus {
+		border-bottom: 2px solid grey;
+		transition: .5s;
+	}
+	.form-group {
+		margin-top: 20px;
+	}
+	.btn {
+		border :none;
+		cursor: pointer;
+		padding: 10px;
+		width: 40%;
+	}
+	.btn-outline {
+		background: none;
+		border: 1px solid #888888;
+		transition: .5s;
+	}
+	.btn-outline:hover {
+		background: #363636;
+		color: white;
+		transition: .5s;
+	}
+	/*============================*/
+	@media only screen and (max-width: 800px) {
+		.box {
+			margin-top: 26vw;
+			width: 60%;
+		}
+		.title-box {
+			font-size: 10vw;
+		}
+		.form-control {
+			width: 75%;
+		}
+		.btn {
+			width: 75%;
+		}
+	}
+	@media only screen and (max-width: 450px) {
+		.box {
+			margin-top: 25vw;
+		}
+	}
+	/*============================*/
