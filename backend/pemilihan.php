@@ -21,7 +21,7 @@
 				$where .= "AND k.id = '$_GET[kandidat]'";
 			}
 
-			$sql = $obj->Select("p.id, s.nama, s.tipe, s.kelas, j.nama as nama_jurusan, k.nama as nama_kandidat", "pemilihan as p join peserta as s on p.id_peserta = s.id LEFT JOIN jurusan as j on s.id_jurusan = j.id LEFT JOIN kandidat as k on p.id_kandidat = k.id where $where order by p.id desc limit $idx, 30");
+			$sql = $obj->Select("p.id, s.nama, s.tipe, s.kelas, j.nama as nama_jurusan, k.nama as nama_kandidat, waktu", "pemilihan as p join peserta as s on p.id_peserta = s.id LEFT JOIN jurusan as j on s.id_jurusan = j.id LEFT JOIN kandidat as k on p.id_kandidat = k.id where $where order by p.id desc limit $idx, 30");
 
 			$total = $obj->Select("count(*) total", "pemilihan as p join peserta as s on p.id_peserta = s.id LEFT JOIN jurusan as j on s.id_jurusan = j.id LEFT JOIN kandidat as k on p.id_kandidat = k.id where $where")[0]['total'];
 
@@ -29,7 +29,7 @@
 		}
 		else
 		{
-			$sql = $obj->Select("p.id, s.nama, s.tipe, s.kelas, j.nama as nama_jurusan, k.nama as nama_kandidat", "pemilihan as p join peserta as s on p.id_peserta = s.id LEFT JOIN jurusan as j on s.id_jurusan = j.id LEFT JOIN kandidat as k on p.id_kandidat = k.id order by p.id desc limit $idx, 30");
+			$sql = $obj->Select("p.id, s.nama, s.tipe, s.kelas, j.nama as nama_jurusan, k.nama as nama_kandidat, waktu", "pemilihan as p join peserta as s on p.id_peserta = s.id LEFT JOIN jurusan as j on s.id_jurusan = j.id LEFT JOIN kandidat as k on p.id_kandidat = k.id order by p.id desc limit $idx, 30");
 
 			$total = $obj->Select("count(*) total", "pemilihan as p join peserta as s on p.id_peserta = s.id LEFT JOIN jurusan as j on s.id_jurusan = j.id LEFT JOIN kandidat as k on p.id_kandidat = k.id")[0]['total'];
 
@@ -110,6 +110,7 @@
 	                  					<td>Nama</td>
 	                  					<td>Tipe</td>
 	                  					<td>Pilihan</td>
+															<td>Waktu</td>
 	                  					<td>Aksi</td>
 	                  				</tr>
 	                  			</thead>
@@ -128,6 +129,7 @@
 	                  										<td><?php echo $data['nama']; ?></td>
 								  							<td><?php echo $data['tipe']; echo ($data['tipe'] == 'Siswa') ? " ($data[kelas] $data[nama_jurusan])" : ''; ?></td>
 								  							<td><?php echo $data['nama_kandidat']; ?></td>
+																<td><?php echo date("G:i, d m y", strtotime($data['waktu'])) ?></td>
 								  							<td>
 								  								<div class="btn-group">
 								  									<button class="btn btn-warning link-hapus" data-url="hapus.php?db=pemilihan&id=<?php echo $data['id']; ?>">Hapus</button>
